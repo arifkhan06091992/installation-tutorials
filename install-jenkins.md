@@ -154,6 +154,31 @@ Welcome to Jenkins Screen
 
 At this point, you have completed a successful installation of Jenkins.
 
+### Step 5 - Setup jenkins server
+Login to Jenkins dashboard and navigate to manage jenkins >> manage 
+Plugin >> available tab
+
+Search “Publish over ssh” and install the plugin.
+
+Go to Jenkins Dashboard and navigate to manage jenkins >> configure system And go lost on the ssh server section.
+
+In ssh server section fill the below required fields
+
+```
+Name : Jenkins Server Name
+Hostname  Jenkins Server IP
+Username : ubuntu
+```
+![](images/jenkins_server_1.png)
+
+Now click on Advance & then check on use password & key authentication the paste the ssh pem key content in the key section and then click on save.
+
+![](images/jenkins_server_2.png)
+
+Test you configuration this will return success message.
+
+
+
 ### Conclusion
 In this tutorial, you have installed Jenkins using the project-provided packages, started the server, opened the firewall, and created an administrative user. At this point, you can start exploring Jenkins.
 
