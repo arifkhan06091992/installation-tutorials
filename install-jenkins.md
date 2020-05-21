@@ -108,7 +108,7 @@ To set up your installation, visit Jenkins on its default port, `8080`, using yo
 You should see the Unlock Jenkins screen, which displays the location of the initial password:
 
 Unlock Jenkins screen:
-![Unlock Screen](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1604/unlock-jenkins.png)
+![Unlock Screen](images/unlock-jenkins.png)
 
 In the terminal window, use the cat command to display the password:
 
@@ -119,10 +119,10 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 Copy the 32-character alphanumeric password from the terminal and paste it into the **Administrator password field**, then click **Continue**.
 
 The next screen presents the option of installing suggested plugins or selecting specific plugins:
-![Install Plugins](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/customize_jenkins_screen_two.png)
+![Install Plugins](images/customize_jenkins_screen_two.png)
 
 We’ll click the **Install suggested plugins** option, which will immediately begin the installation process:
-![Jenkins Getting Started Install Plugins Screen](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/jenkins_plugin_install_two.png)
+![Jenkins Getting Started Install Plugins Screen](images/jenkins_plugin_install_two.png)
 
 
 When the installation is complete, you will be prompted to set up the `first administrative user`. It’s possible to skip this step and continue as `admin` using the initial password we used above, but we’ll take a moment to create the user.
@@ -130,23 +130,23 @@ When the installation is complete, you will be prompted to set up the `first adm
 > Note: The default Jenkins server is NOT encrypted, so the data submitted with this form is not protected. When you’re ready to use this installation, follow the guide How to Configure Jenkins with SSL Using an Nginx Reverse Proxy on Ubuntu 18.04. This will protect user credentials and information about builds that are transmitted via the web interface.
 
 Jenkins Create First Admin User Screen:
-![Jenkins Create First Admin User Screen](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/jenkins_create_user.png)
+![Jenkins Create First Admin User Screen](images/jenkins_create_user.png)
 
 Enter the name and password for your user:
 
 Jenkins Create User:
-![Jenkins Create User](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/jenkins_user_info.png)
+![Jenkins Create User](images/jenkins_user_info.png)
 
 
 You will see an Instance Configuration page that will ask you to confirm the preferred URL for your Jenkins instance. Confirm either the domain name for your server or your server’s IP address:
 
 Jenkins Instance Configuration:
-![Jenkins Instance Configuration](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/instance_confirmation.png)
+![Jenkins Instance Configuration](images/instance_confirmation.png)
 
 After confirming the appropriate information, click **Save and Finish**. You will see a confirmation page confirming that “Jenkins is Ready!”:
 
 Jenkins is ready screen:
-![Jenkins is ready screen](https://assets.digitalocean.com/articles/jenkins-install-ubuntu-1804/jenkins_ready_page_two.png)
+![Jenkins is ready screen](images/jenkins_ready_page_two.png)
 
 Click **Start using Jenkins** to visit the main Jenkins dashboard:
 
