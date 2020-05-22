@@ -138,16 +138,16 @@ sudo supervisorctl restart all
 - Click on services and select the codedeploy section. 
 - Click on application under codedeploy 
 - Click on create application
-- ![](images/create%20codedeploy%20application.png)
+- ![](../images/ci-cd-tutorials/create%20codedeploy%20application.png)
 - Fill the name of the application & choose the platform Ec2/On-premises.
 - Click on create application. 
 - click on Create deployment group and Fill the required field:
 	- Deployment group name: Enter the deployment name
     - Enter a service role: Select the service role which we created earlier. 
-    - ![](images/select-code-deploy-role.png)
+    - ![](../images/ci-cd-tutorials/select-code-deploy-role.png)
     - Deployment Place: In-place
     - Environment Configuration: Amazon Ec2 Instance & select the instance where you want to deploy the code. 
-    - ![](images/environment-configuration.png)
+    - ![](../images/ci-cd-tutorials/environment-configuration.png)
     - Deployment Settings: CodeDeploy Default all at once
 - Click on save changes. 
 
@@ -208,7 +208,7 @@ The AWS CodeDeploy agent is running as PID <FOUR DIGIT NUMBER>
 	- Pipeline name: Put any pipeline name which you want to set
 	- Service Role: check on new service role
 	- Role name: Enter any role name
-	- ![](images/getting-started-aws-pipeline.png)
+	- ![](../images/ci-cd-tutorials/getting-started-aws-pipeline.png)
 - Click on Next
 - Select the source provider S3 the fill the require field
 	- Bucket: Put the bucket name
@@ -220,7 +220,7 @@ The AWS CodeDeploy agent is running as PID <FOUR DIGIT NUMBER>
 	- Region: Your region where you create the codedeploy
 	- Application name: Put the application name which you created earlier. 
 	- Deployment group: Select the deployment group 
-	- ![](images/select-code-deploy-app.png)
+	- ![](../images/ci-cd-tutorials/select-code-deploy-app.png)
 - Click on Next
 - click on create pipeline.
 

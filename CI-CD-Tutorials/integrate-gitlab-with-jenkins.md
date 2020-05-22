@@ -1,6 +1,6 @@
 # How to integrate Jenkins with Gitlab
 
-![](images/jenkins_gitlab_integration.jpg)
+![](../images/ci-cd-tutorials/jenkins_gitlab_integration.jpg)
 
 Jenkins is a widely used Continuous Integration (CI) tool now-a-days and Gitlab is the leading integrated product for the entire software development life cycle. Even though we have CI feature within the Gitlab, many prefer to use Jenkins along with Gitlab since it’s more extendable with a lot more features and simple user interface.
 
@@ -14,9 +14,9 @@ First, we must create a user that Jenkins will use to interact via the GitLab AP
 
 ### Step 1 : Generate Gitlab API Token
 - First open GitLab and go to Profile Settings
-- ![](images/gitlab_api_token.png)
+- ![](../images/ci-cd-tutorials/gitlab_api_token.png)
 - Then, click “Access Token” and create a Jenkins API Token.
-- ![](images/gitlab_api_token-2.png)
+- ![](../images/ci-cd-tutorials/gitlab_api_token-2.png)
 - Then, save and copy this API Token. Let’s go on with Configure the Jenkins Server.
 
 ### Step 2 : Configure the Jenkins Server
@@ -24,6 +24,6 @@ First, we must create a user that Jenkins will use to interact via the GitLab AP
 - Go to Manage Jenkins -> Configure System and scroll down to the ‘GitLab‘ section.
 - Write a custom connection name, enter the GitLab server URL in the ‘GitLab host URL‘ field and click Add -> Jenkins button.
 - Then, fill required fields as shown below with the Jenkins Access API Token which we created in GitLab before.
-- ![](images/gitlab_jenkins_integration_5.png)
-- ![](images/integrate_gitlab_with_jenkins.png)
+- ![](../images/ci-cd-tutorials/gitlab_jenkins_integration_5.png)
+- ![](../images/ci-cd-tutorials/integrate_gitlab_with_jenkins.png)
 - Then, select this API Token credential and finally click “Test” and see the “Success” message.
